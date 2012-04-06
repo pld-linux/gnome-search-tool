@@ -2,7 +2,7 @@ Summary:	GNOME search tool
 Summary(pl.UTF-8):	Narzędzie wyszukujące dla GNOME
 Name:		gnome-search-tool
 Version:	3.4.0
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-search-tool/3.4/%{name}-%{version}.tar.xz
@@ -24,8 +24,8 @@ BuildRequires:	xz
 Requires(post,preun):	GConf2
 Requires:	glib2 >= 1:2.30.0
 Requires:	gtk+3 >= 3.4.0
-Provides:	gnome-utils-search-tool = %{version}-%{release}
-Obsoletes:	gnome-utils-search-tool < 3.3.2-1
+Provides:	gnome-utils-search-tool = 1:%{version}-%{release}
+Obsoletes:	gnome-utils-search-tool < 1:3.3.2-1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
